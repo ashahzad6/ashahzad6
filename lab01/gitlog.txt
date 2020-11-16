@@ -1,0 +1,82 @@
+.
+├── ashahzad6_matrix_base.txt
+├── cert-signer
+├── cert-signer.pub
+├── .git
+│   ├── branches
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── master
+│   │       └── remotes
+│   │           └── origin
+│   │               └── master
+│   ├── objects
+│   │   ├── 00
+│   │   │   └── 81580f2d10b0f75123fffc3648eea1c5d171db
+│   │   ├── 15
+│   │   │   └── 2e743b43df855f1db73cf1ae5ab455b9582b10
+│   │   ├── 16
+│   │   │   └── 1b89577314a7e9b7bc911f54e9091e4672ec3e
+│   │   ├── 1c
+│   │   │   └── 80f86935e0f15c42ba6332a6c04c5008976568
+│   │   ├── 36
+│   │   │   └── 71f01b741693e94b9cd0acce90fb7fc66e1722
+│   │   ├── 4a
+│   │   │   └── 1977f58e3681dd2b351b63d79728041304ea2b
+│   │   ├── 53
+│   │   │   └── fe6fa3619477360d55b22074e80322f5e8eaf9
+│   │   ├── 6a
+│   │   │   └── d97e2a7569102d9e8889dc84b402aebda48d1f
+│   │   ├── 6d
+│   │   │   └── 360da5d39fd01c22de1a9b55630e129ad6a724
+│   │   ├── 80
+│   │   │   └── 081b131e7ef4a28424147a22da41fe17682a1f
+│   │   ├── 87
+│   │   │   └── 677d8aadd4ddb85d2246edd64ca21e6e5ac3d9
+│   │   ├── c4
+│   │   │   └── 6cc163c523f27bbb328aba398c45845c567672
+│   │   ├── d9
+│   │   │   └── 44b6203a7c201abcd90b34bfa14cfa6f183417
+│   │   ├── e5
+│   │   │   └── 12ae7bad86b8cbdd74657c2fe4eb328b147d97
+│   │   ├── f1
+│   │   │   └── 8acb0eefcf357cc0625e2b3d82faafea427c53
+│   │   ├── f7
+│   │   │   └── 959513ef6b6cd42cfa35cb8969be444c1d9bea
+│   │   ├── info
+│   │   └── pack
+│   ├── ORIG_HEAD
+│   └── refs
+│       ├── heads
+│       │   └── master
+│       ├── remotes
+│       │   └── origin
+│       │       └── master
+│       └── tags
+├── gitlog.txt
+├── lab01_base_ashahzad6.sh
+└── totalNumberOfSoftware.txt
+
+33 directories, 46 files
