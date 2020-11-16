@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo  "SPR500 LAB03 REPORT "
+
+echo  "STUDENT NAME: AAMIR SHAHZAD "
+echo  "STUDENT USER NAME: ASHAHZAD6 "
+echo  "TUDENT ID: 069076131 "
+
+
+echo  "*********** ROUTING TABLE ON VM2***********"
+ip r 
+echo  "*********** http server is running on port 80***********"
+systemctl status httpd | grep 80
+echo  "*********** Current Size of Each log files ***********"
+ls -l /var/log/boot.log
+ls -l /var/log/message
+ls -l /var/log/boot.log
+ls -l /var/log/maillog
+ls -l /var/log/secure
+ls -l /var/log/wtmp 
+ls -l /var/log/btmp 
+ls -l /var/log/lastlog 
+ls -l /var/log/dnf.log
+echo  "*********** Number of active services on VM2 ***********"
+systemctl list-unit-files | grep enabled | wc -l
+echo  "*********** Number of RPM packages currently installed on the VM***********"
+rpm -qa | wc -l
+echo  "*********** Current Firewall rules***********"
+sudo iptables -L -n -v
+echo  "*********** Current execution mode of SELinux***********"
+sestatus
+

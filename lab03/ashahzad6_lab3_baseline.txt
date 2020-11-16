@@ -1,0 +1,82 @@
+SPR500 LAB03 REPORT 
+STUDENT NAME: AAMIR SHAHZAD 
+STUDENT USER NAME: ASHAHZAD6 
+TUDENT ID: 069076131 
+*********** ROUTING TABLE ON VM2***********
+default via 172.16.255.1 dev ens192 proto dhcp metric 100 
+172.16.0.0/16 dev ens192 proto kernel scope link src 172.16.28.2 metric 100 
+192.168.1.0/24 via 192.168.28.1 dev ens224 
+192.168.2.0/24 via 192.168.28.1 dev ens224 
+192.168.3.0/24 via 192.168.28.1 dev ens224 
+192.168.4.0/24 via 192.168.28.1 dev ens224 
+192.168.5.0/24 via 192.168.28.1 dev ens224 
+192.168.6.0/24 via 192.168.28.1 dev ens224 
+192.168.7.0/24 via 192.168.28.1 dev ens224 
+192.168.8.0/24 via 192.168.28.1 dev ens224 
+192.168.9.0/24 via 192.168.28.1 dev ens224 
+192.168.10.0/24 via 192.168.28.1 dev ens224 
+192.168.11.0/24 via 192.168.28.1 dev ens224 
+192.168.12.0/24 via 192.168.28.1 dev ens224 
+192.168.13.0/24 via 192.168.28.1 dev ens224 
+192.168.14.0/24 via 192.168.28.1 dev ens224 
+192.168.15.0/24 via 192.168.28.1 dev ens224 
+192.168.16.0/24 via 192.168.28.1 dev ens224 
+192.168.17.0/24 via 192.168.28.1 dev ens224 
+192.168.18.0/24 via 192.168.28.1 dev ens224 
+192.168.19.0/24 via 192.168.28.1 dev ens224 
+192.168.20.0/24 via 192.168.28.1 dev ens224 
+192.168.21.0/24 via 192.168.28.1 dev ens224 
+192.168.22.0/24 via 192.168.28.1 dev ens224 
+192.168.23.0/24 via 192.168.28.1 dev ens224 
+192.168.24.0/24 via 192.168.28.1 dev ens224 
+192.168.25.0/24 via 192.168.28.1 dev ens224 
+192.168.26.0/24 via 192.168.28.1 dev ens224 
+192.168.27.0/24 via 192.168.28.1 dev ens224 
+192.168.28.0/24 dev ens224 proto kernel scope link src 192.168.28.2 metric 101 
+192.168.29.0/24 via 192.168.28.1 dev ens224 
+192.168.30.0/24 via 192.168.28.1 dev ens224 
+*********** http server is running on port 80***********
+Oct 07 12:13:34 aamir-vm2.shahzad httpd[5590]: Server configured, listening on: port 80
+*********** Current Size of Each log files ***********
+-rw-------. 1 root root 0 Oct  8 03:20 /var/log/boot.log
+-rw-------. 1 root root 0 Oct  8 03:20 /var/log/boot.log
+-rw-------. 1 root root 0 Oct  4 03:10 /var/log/maillog
+-rw-------. 1 root root 90913 Oct  8 12:57 /var/log/secure
+-rw-rw-r--. 1 root utmp 384 Oct  8 12:57 /var/log/wtmp
+-rw-rw----. 1 root utmp 1152 Oct  7 11:06 /var/log/btmp
+-rw-rw-r--. 1 root utmp 292876 Oct  8 12:57 /var/log/lastlog
+-rw-r--r--. 1 root root 881407 Oct  8 12:02 /var/log/dnf.log
+*********** Number of active services on VM2 ***********
+33
+*********** Number of RPM packages currently installed on the VM***********
+479
+*********** Current Firewall rules***********
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 3437   18M ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+   13  1092 ACCEPT     icmp --  *      *       0.0.0.0/0            0.0.0.0/0           
+   23  1380 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0           
+    5   300 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            state NEW tcp dpt:22
+    0     0 ACCEPT     tcp  --  ens224 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80 state NEW,ESTABLISHED
+   15   900 ACCEPT     tcp  --  ens192 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80 state NEW,ESTABLISHED
+  987  279K REJECT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80 ctstate NEW,ESTABLISHED
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 REJECT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited
+
+Chain OUTPUT (policy ACCEPT 2643 packets, 239K bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   78 15082 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp spt:80 ctstate ESTABLISHED
+*********** Current execution mode of SELinux***********
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   enforcing
+Mode from config file:          enforcing
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Memory protection checking:     actual (secure)
+Max kernel policy version:      31
