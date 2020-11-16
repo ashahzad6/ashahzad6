@@ -1,0 +1,10 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2020-11-13 11:36 EST
+Nmap scan report for sp.com (192.168.28.25)
+Host is up (0.000012s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+25/tcp open  smtp
+53/tcp open  domain
+
+Nmap done: 1 IP address (1 host up) scanned in 1.61 seconds

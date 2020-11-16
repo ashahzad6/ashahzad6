@@ -1,0 +1,10 @@
+Server:		192.168.28.253
+Address:	192.168.28.253#53
+
+Non-authoritative answer:
+*** Can't find sp.com: No answer
+
+Authoritative answers can be found from:
+sp.com	nameserver = anguyen83-pri.sp.com.
+anguyen83-pri.sp.com	internet address = 192.168.23.53
+

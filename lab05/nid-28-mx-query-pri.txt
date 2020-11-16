@@ -1,0 +1,5 @@
+Server:		192.168.28.53
+Address:	192.168.28.53#53
+
+sp.com	mail exchanger = 10 mail.sp.com.
+
