@@ -1,0 +1,10 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2020-10-23 10:19 EDT
+Nmap scan report for 192.168.28.2
+Host is up (0.0090s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+53/tcp open  domain
+
+
+Nmap done: 1 IP address (1 host up) scanned in 0.15 seconds
